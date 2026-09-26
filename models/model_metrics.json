@@ -1,0 +1,24 @@
+{
+    "model": "Random Forest Regressor",
+    "dataset": "Real OpenAQ hourly PM2.5 data",
+    "target": "PM2.5-derived AQI proxy",
+    "features": [
+        "pm25",
+        "hour",
+        "day",
+        "month"
+    ],
+    "total_records": 7000,
+    "training_records": 5600,
+    "testing_records": 1400,
+    "split_method": "Chronological 80/20",
+    "MAE": 0.1498,
+    "RMSE": 1.3149,
+    "R2": 0.9997,
+    "feature_importance": {
+        "pm25": 0.999999,
+        "month": 0.0,
+        "day": 0.0,
+        "hour": 0.0
+    }
+}
